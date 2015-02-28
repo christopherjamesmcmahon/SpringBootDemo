@@ -23,5 +23,7 @@ I created this project to experiment directly with Spring Boot and microservices
 ## Installation
 
 - Install gradle: https://gradle.org/ (Add the gradle bin directory to your PATH variable)
-- cmd -> cd SpringBootDemo\demo -> gradle bootRun
+- Checkout project
+- Navegate to SpringBootDemo\demo
+- gradle bootRun 
 
