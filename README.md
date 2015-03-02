@@ -16,23 +16,6 @@ This is a sample project to demonstrate some of the capabilities available in Sp
 		RestTemplate restTemplate = new RestTemplate();
 		restTemplate.postForObject("http://localhost:8080/products", detail1, ProductDetail.class);
 		
-## REST
-
-To add a product:
-
-POST: http://localhost:8080/product
-
-{
-    	"productId" : "ABCD1234",
-    	"productName" : "A Book",
-    	"shortDescription" : "A really good book",
-    	"longDescription" : "A really really good book",
-    	"inventoryId" : "0123234" 
-}
-
-## Shell
-
-The script "postproduct.sh" receives one parameter, the name of the .txt containing the REST message to send to the /products endpoint.  
 
 ## Motivation
 
@@ -68,3 +51,19 @@ true
 http://localhost:8080/inventory?id=0
 
 false
+
+To add a product:
+
+POST: http://localhost:8080/product
+
+{
+    	"productId" : "ABCD1234",
+    	"productName" : "A Book",
+    	"shortDescription" : "A really good book",
+    	"longDescription" : "A really really good book",
+    	"inventoryId" : "0123234" 
+}
+
+Using the shell script (bash):
+
+The script "postproduct.sh" receives one parameter, the name of the .txt containing the REST message to send to the /products endpoint.  
