@@ -19,7 +19,14 @@ public class DemoApplication {
 	public static void main(String[] args) {
        ApplicationContext ctx = SpringApplication.run(DemoApplication.class);
 	   
-        ProductDetail detail1 = new ProductDetail();
+        /** 
+		
+		STRANGE!!!  When this is launched in a windows environment the code executes no problem whereas on
+		the we receive a 400...and I was unable to get a useful log message.
+			
+		As an alternative I've created a shell script to post the message instead: postproduct.sh
+			
+		ProductDetail detail1 = new ProductDetail();
         detail1.setProductId("ABCD1234");
         detail1.setProductName("Dan's Book of Writing");
         detail1.setShortDescription("A book about writing books.");
@@ -40,7 +47,7 @@ public class DemoApplication {
 
 		log.info("Storing an invalid product");		
 		restTemplate.postForObject("http://localhost:8080/products", detail2, ProductDetail.class);
-
+		**/
 
     }
 }

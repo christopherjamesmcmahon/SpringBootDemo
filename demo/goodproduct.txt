@@ -1,0 +1,7 @@
+{
+    	"productId" : "ABCD1234",
+    	"productName" : "A Book",
+    	"shortDescription" : "A really good book",
+    	"longDescription" : "A really really good book",
+    	"inventoryId" : "0123234" 
+}
